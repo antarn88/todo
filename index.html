@@ -10,7 +10,21 @@
 
 <body>
     <main class="wrapper">
-        <div class="todo"></div>
+        <h1 class="main-title">Daily To-Do list manager</h1>
+        <div class="todo">
+            <div class="date"></div>
+            <div class="input-container">
+                <input type="text" id="input-field">
+                <button class="add-btn">+</button>
+            </div>
+            <div class="output-container">
+                <div class="pending-items-label"></div>
+                <div class="pending-items-container"></div>
+                <div class="completed-tasks-label"></div>
+                <div class="completed-tasks-container"></div>
+                <div class="bottom-buttons-container"></div>
+            </div>
+        </div>
     </main>
     <script src="./js/app.js"></script>
 </body>
