@@ -1,0 +1,23 @@
+* {
+	box-sizing: border-box;
+}
+html, body {
+	margin: 0;
+	background-color: rgb(246, 96, 94);
+	padding: 0;
+	height: 100%;
+	font-family: sans-serif;
+}
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+.todo {
+	border-radius: .3rem;
+	background-color: rgb(244, 247, 252);
+	padding: 1.5rem;
+	width: 25rem;
+	height: 32rem;
+}
