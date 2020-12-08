@@ -3,21 +3,83 @@
 }
 html, body {
 	margin: 0;
-	background-color: rgb(246, 96, 94);
+	background: linear-gradient(180deg, rgb(248, 100, 87), rgb(244, 91, 104));
 	padding: 0;
 	height: 100%;
 	font-family: sans-serif;
 }
 .wrapper {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	height: 100%;
+	padding: 5rem 0;
+}
+.main-title {
+	margin: 0 0 3rem 0;
+	color: #fff;
+	user-select: none;
 }
 .todo {
 	border-radius: .3rem;
 	background-color: rgb(244, 247, 252);
-	padding: 1.5rem;
+	padding: 0 1.5rem;
 	width: 25rem;
 	height: 32rem;
+	user-select: none;
+}
+.weekday {
+	padding-top: 3rem;
+}
+.date {
+	padding-bottom: 2rem;
+}
+.weekday, .date {
+	color: rgb(245, 123, 101);
+	font-size: 1.4rem;
+}
+.input-container {
+	margin-bottom: 2.3rem;
+}
+.input-field {
+	outline-width: 1px;
+	outline-color: rgba(0, 0, 255, .7);
+	padding: .5rem 1rem;
+	width: 78%;
+	font-size: 1.2rem;
+}
+.input-field::placeholder {
+	color: rgba(0, 0, 0, .25);
+	font-style: italic;
+}
+.add-btn {
+	margin-left: .5rem;
+	padding: .5rem 1.5rem;
+	font-size: 1.2rem;
+}
+.pending-items-container {
+	display: flex;
+	flex-direction: column;
+	margin-top: 1.5rem;
+}
+.pending-item {
+	position: relative;
+	margin-bottom: .5rem;
+	background-color: rgb(224, 232, 244);
+	padding: .5rem;
+}
+.pending-item label {
+	zoom: 1.15;
+}
+.pending-item input[type="checkbox"] {
+	zoom: 1.15;
+}
+.pending-item button {
+	position: absolute;
+	right: 0;
+	margin-right: .5rem;
+}
+.bottom-buttons-container {
+	position: relative;
+	top: 4.5rem;
+	text-align: center;
 }
