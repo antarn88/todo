@@ -24,7 +24,7 @@ html, body {
 	background-color: rgb(244, 247, 252);
 	padding: 0 1.5rem;
 	width: 25rem;
-	height: 32rem;
+	min-height: 32rem;
 	user-select: none;
 }
 .weekday {
@@ -78,8 +78,11 @@ html, body {
 	right: 0;
 	margin-right: .5rem;
 }
+.output-container {
+	display: flex;
+	flex-direction: column;
+}
 .bottom-buttons-container {
-	position: relative;
-	top: 4.5rem;
+	padding: 2rem 0;
 	text-align: center;
 }
