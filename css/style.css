@@ -5,7 +5,7 @@ html, body {
 	margin: 0;
 	background: linear-gradient(180deg, rgb(248, 100, 87), rgb(244, 91, 104));
 	padding: 0;
-	height: 100%;
+	min-height: 100%;
 	font-family: sans-serif;
 }
 .wrapper {
@@ -73,10 +73,16 @@ html, body {
 .pending-item input[type="checkbox"] {
 	zoom: 1.15;
 }
-.pending-item button {
+.pending-item .delete-btn {
+	display: block;
 	position: absolute;
+	top: 0;
 	right: 0;
-	margin-right: .5rem;
+	width: 2.5rem;
+	height: 100%;
+}
+.show-delete-btn {
+	display: block;
 }
 .output-container {
 	display: flex;
