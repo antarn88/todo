@@ -8,6 +8,9 @@ html, body {
 	min-height: 100%;
 	font-family: sans-serif;
 }
+body {
+	overflow-y: scroll;
+}
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -53,8 +56,8 @@ html, body {
 }
 .add-btn {
 	margin-left: .5rem;
-	padding: .5rem 1.5rem;
-	font-size: 1.2rem;
+	padding: .5rem 1rem;
+	font-size: 1rem;
 }
 .pending-items-container {
 	display: flex;
@@ -67,10 +70,7 @@ html, body {
 	background-color: rgb(224, 232, 244);
 	padding: .5rem;
 }
-.pending-item label {
-	zoom: 1.15;
-}
-.pending-item input[type="checkbox"] {
+.pending-item label, .pending-item input[type="checkbox"] {
 	zoom: 1.15;
 }
 .pending-item .delete-btn {
@@ -91,4 +91,46 @@ html, body {
 .bottom-buttons-container {
 	padding: 2rem 0;
 	text-align: center;
+}
+.no-todos {
+	text-align: center;
+}
+.no-todos__icon {
+	margin-bottom: .7rem;
+	font-size: 2rem;
+}
+.no-todos__text {
+	font-weight: bold;
+}
+.show-item {
+	display: block;
+}
+.hide-item {
+	display: none;
+}
+.completed-tasks-label {
+	margin: 1.5rem 0;
+}
+.completed-item {
+	position: relative;
+	margin-bottom: .5rem;
+	background-color: rgb(255, 255, 255);
+	padding: 1rem;
+}
+.completed-item input[type="checkbox"] {
+	zoom: 1.15;
+}
+.completed-item label {
+	text-decoration: line-through;
+	color: gray;
+	zoom: 1.15;
+}
+.show-hide-complete-btn, .clear-all-btn {
+	border: 0;
+	background-color: inherit;
+	font-size: 1rem;
+	font-weight: bold;
+}
+.show-hide-complete-btn:hover, .clear-all-btn:hover {
+	color: rgba(0, 0, 0, .6);
 }

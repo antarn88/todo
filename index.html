@@ -16,18 +16,22 @@
             <div class="date"></div>
             <div class="input-container">
                 <input type="text" class="input-field" placeholder="Take the garbage out">
-                <button class="add-btn">+</button>
+                <button class="add-btn">➕</button>
             </div>
             <div class="output-container">
                 <div class="pending-items-label"></div>
                 <div class="pending-items-container">
                 </div>
-                <div class="completed-tasks-label">Completed tasks:</div>
+                <div class="completed-tasks-label"></div>
                 <div class="completed-tasks-container"></div>
                 <div class="bottom-buttons-container">
-                    <button>Show Complete</button>
-                    <button>Clear All</button>
+                    <button class="show-hide-complete-btn">Show Complete</button>
+                    <button class="clear-all-btn">Clear All</button>
                 </div>
+            </div>
+            <div class="no-todos hide-item">
+                <div class="no-todos__icon">🥂</div>
+                <div class="no-todos__text">Time to chill! You have no todos.</div>
             </div>
         </div>
     </main>
